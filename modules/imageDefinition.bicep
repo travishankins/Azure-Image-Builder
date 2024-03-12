@@ -14,12 +14,13 @@ resource imageDefinition 'Microsoft.Compute/galleries/images@2022-03-03' = {
     architecture: 'x64'
     hyperVGeneration: 'V1'
     identifier: {
-      offer: 'Windows'
-      publisher: 'myCo'
-      sku: '10avd'
+      offer: 'pro-byol'
+      publisher: 'esri'
+      sku: 'pro-byol-32'
     }
     osState: 'Generalized'
     osType: 'Windows'
-    privacyStatementUri: 'string'
+    // Ensure the privacyStatementUri is set to a valid URI if available
+    privacyStatementUri: 'https://www.esri.com/en-us/legal/privacy/overview'
   }
 }

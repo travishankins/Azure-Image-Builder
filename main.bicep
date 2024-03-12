@@ -90,6 +90,7 @@ module imageTemplate './modules/imageTemplate.bicep' = {
     fslogixScriptURI: fslogixScriptURI
     OptimizeOsScriptURI: OptimizeOsScriptURI
     teamsScriptURI: teamsScriptURI
+    setupOfficeScriptURI: setupOfficeScriptURI
   }
   dependsOn: [
     imagedef
