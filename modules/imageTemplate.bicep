@@ -12,6 +12,7 @@ param diskSize int
 param fslogixScriptURI string
 param OptimizeOsScriptURI string
 param teamsScriptURI string
+param setupOfficeScriptURI string // Added parameter for Office script URI
 
 resource identity 'Microsoft.ManagedIdentity/userAssignedIdentities@2023-01-31' existing = {
   name: identityName
@@ -25,8 +26,8 @@ resource imageTemplate 'Microsoft.VirtualMachineImages/imageTemplates@2022-02-14
   name: imageTemplateName
   location: location
   identity: {
-    type:'UserAssigned'
-    userAssignedIdentities:{
+    type: 'UserAssigned'
+    userAssignedIdentities: {
       '${identity.id}': {}
     }
   }
@@ -83,6 +84,20 @@ resource imageTemplate 'Microsoft.VirtualMachineImages/imageTemplates@2022-02-14
       {
         type: 'WindowsRestart'
         restartCheckCommand: 'write-host "Restarting post OS Optimization"'
+        restartTimeout: '5m'
+      }
+      // Added section for Office installation
+      {
+        type: 'PowerShell'
+        name: 'SetupOffice'
+        runElevated: true
+        runAsSystem: true
+        scriptUri: setupOfficeScriptURI
+      }
+      // Consider if another restart is needed after Office installation
+      {
+        type: 'WindowsRestart'
+        restartCheckCommand: 'write-host "Restarting post Office installation"'
         restartTimeout: '5m'
       }
     ]
