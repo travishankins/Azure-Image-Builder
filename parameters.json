@@ -1,0 +1,51 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "resourceGroupName": {
+            "value": "rohanlab-avdimage-rg-01"
+        },
+      "location": {
+        "value": "West Europe"
+      },
+      "identityName": {
+        "value": "rohanlab-aibidntity-01"
+      },
+      "computeGalleryName": {
+        "value": "rohanlabacg01"
+      },
+      "imageDefinitionName": {
+        "value": "wind10avd"
+      },
+      "imageTemplateName": {
+        "value": "avd10ImageTemplate01"
+      },
+      "sourceImagePublisher": {
+        "value": "MicrosoftWindowsDesktop"
+      },
+      "sourceImageOffer": {
+        "value": "windows-10"
+      },
+      "sourceImageSku": {
+        "value": "win10-21h2-avd"
+      },
+      "sourceImageVersion": {
+        "value": "latest"
+      },
+      "vmSize": {
+        "value": "Standard_D2_v2"
+      },
+      "diskSize": {
+        "value": 127
+      },
+      "fslogixScriptURI": {
+        "value": "https://raw.githubusercontent.com/rohanislam2/rohanlab-azureImageBuilder/main/scripts/SetupFSLogix.ps1"
+      },
+      "OptimizeOsScriptURI": {
+        "value": "https://raw.githubusercontent.com/rohanislam2/rohanlab-azureImageBuilder/main/scripts/OptimizeOS.ps1"
+      },
+      "teamsScriptURI": {
+        "value": "https://raw.githubusercontent.com/rohanislam2/rohanlab-azureImageBuilder/main/scripts/SetupTeams.ps1"
+      }
+    }
+  }
