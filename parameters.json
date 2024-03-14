@@ -12,7 +12,7 @@
       "value": "partner-aibidntity-01"
     },
     "computeGalleryName": {
-      "value": "partnerGallery01"
+      "value": "partneracg01"
     },
     "imageDefinitionName": {
       "value": "wind10avd"
@@ -33,7 +33,7 @@
       "value": "latest"
     },
     "vmSize": {
-      "value": "Standard_NV32as_v4"
+      "value": "Standard_B4als_v2"
     },
     "diskSize": {
       "value": 127
@@ -45,7 +45,7 @@
       "value": "https://raw.githubusercontent.com/travishankins/Azure_Image_Builder/main/scripts/OptimizeOS.ps1"
     },
     "teamsScriptURI": {
-      "value": "https://raw.githubusercontent.com/travishankins/rAzure_Image_Builder/main/scripts/SetupTeams.ps1"
+      "value": "https://raw.githubusercontent.com/travishankins/Azure_Image_Builder/main/scripts/SetupTeams.ps1"
     }
   }
 }

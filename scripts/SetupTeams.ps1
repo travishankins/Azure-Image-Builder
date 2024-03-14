@@ -1,5 +1,3 @@
-
-
 Write-Host "###### Starting MS Teams installation script ######"
 
  #region: Variables
