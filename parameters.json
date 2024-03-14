@@ -12,25 +12,25 @@
       "value": "partner-aibidntity-01"
     },
     "computeGalleryName": {
-      "value": "partneracg01"
+      "value": "partnerGallery01"
     },
     "imageDefinitionName": {
-      "value": "wind11avd"
+      "value": "wind10avd"
     },
     "imageTemplateName": {
-      "value": "avd11ImageTemplate01"
+      "value": "avd10ImageTemplate01"
     },
     "sourceImagePublisher": {
-      "value": "esri"
+      "value": "MicrosoftWindowsDesktop"
     },
     "sourceImageOffer": {
-      "value": "pro-byol"
+      "value": "windows-10"
     },
     "sourceImageSku": {
-      "value": "pro-byol-32"
+      "value": "win10-21h2-avd"
     },
     "sourceImageVersion": {
-      "value": "3.2.49743"
+      "value": "latest"
     },
     "vmSize": {
       "value": "Standard_NV32as_v4"
@@ -45,10 +45,7 @@
       "value": "https://raw.githubusercontent.com/travishankins/Azure_Image_Builder/main/scripts/OptimizeOS.ps1"
     },
     "teamsScriptURI": {
-      "value": "https://raw.githubusercontent.com/travishankins/Azure_Image_Builder/main/scripts/SetupTeams.ps1"
-    },
-    "setupOfficeScriptURI": {
-      "value": "https://raw.githubusercontent.com/travishankins/Azure_Image_Builder/main/scripts/SetupOffice.ps1"
+      "value": "https://raw.githubusercontent.com/travishankins/rAzure_Image_Builder/main/scripts/SetupTeams.ps1"
     }
   }
 }

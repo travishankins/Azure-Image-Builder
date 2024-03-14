@@ -14,7 +14,6 @@ param diskSize int
 param fslogixScriptURI string
 param OptimizeOsScriptURI string
 param teamsScriptURI string
-param setupOfficeScriptURI string
 
 // Define target scope
 targetScope = 'subscription'
@@ -90,7 +89,6 @@ module imageTemplate './modules/imageTemplate.bicep' = {
     fslogixScriptURI: fslogixScriptURI
     OptimizeOsScriptURI: OptimizeOsScriptURI
     teamsScriptURI: teamsScriptURI
-    setupOfficeScriptURI: setupOfficeScriptURI
   }
   dependsOn: [
     imagedef
