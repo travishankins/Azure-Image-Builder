@@ -30,7 +30,7 @@
       "value": "win11-23h2-avd"
     },
     "sourceImageVersion": {
-      "value": "latest"
+      "value": "22631.3296.240303"
     },
     "vmSize": {
       "value": "Standard_B4als_v2"
