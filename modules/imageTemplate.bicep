@@ -69,21 +69,11 @@ resource imageTemplate 'Microsoft.VirtualMachineImages/imageTemplates@2022-02-14
         scriptUri: teamsScriptURI
       }
       {
-        type: 'WindowsRestart'
-        restartCheckCommand: 'write-host "Restarting post Teams installation"'
-        restartTimeout: '5m'
-      }
-      {
         type: 'PowerShell'
         name: 'OptimizeOS'
         runElevated: true
         runAsSystem: true
         scriptUri: OptimizeOsScriptURI
-      }
-      {
-        type: 'WindowsRestart'
-        restartCheckCommand: 'write-host "Restarting post OS Optimization"'
-        restartTimeout: '5m'
       }
     ]
   }
