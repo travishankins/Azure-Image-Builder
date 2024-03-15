@@ -16,7 +16,7 @@ resource imageDefinition 'Microsoft.Compute/galleries/images@2022-03-03' = {
     identifier: {
       offer: 'Windows'
       publisher: 'Partners'
-      sku: '11avd'
+      sku: '10avd'
     }
     osState: 'Generalized'
     osType: 'Windows'

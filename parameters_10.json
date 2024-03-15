@@ -15,19 +15,19 @@
       "value": "partneracg01"
     },
     "imageDefinitionName": {
-      "value": "wind11avd"
+      "value": "wind10avd"
     },
     "imageTemplateName": {
-      "value": "avd11ImageTemplate01"
+      "value": "avd10ImageTemplate01"
     },
     "sourceImagePublisher": {
       "value": "MicrosoftWindowsDesktop"
     },
     "sourceImageOffer": {
-      "value": "windows-11"
+      "value": "windows-10"
     },
     "sourceImageSku": {
-      "value": "win11-23h2-avd"
+      "value": "win10-21h2-avd"
     },
     "sourceImageVersion": {
       "value": "latest"
