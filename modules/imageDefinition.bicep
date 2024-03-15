@@ -12,7 +12,7 @@ resource imageDefinition 'Microsoft.Compute/galleries/images@2022-03-03' = {
   parent: acg
   properties: {
     architecture: 'x64'
-    hyperVGeneration: 'V1'
+    hyperVGeneration: 'V2'
     identifier: {
       offer: 'Windows'
       publisher: 'Partners'
